@@ -63,3 +63,5 @@ README.md con:
 Explicación de cómo funciona el filtro
 Qué parte fue asistida por IA
 
+El filtro lee lo que esta escrito en el campo de busqueda, y lee la categoria que esta seleccionada, luego ve si alguno de los nombres de los productros incluyen lo que se escribio en el campo de busqueda (no se pide el nombre exacto) y checa si si hay productos que lo incluyan, que esten dentro de la categoria seleccionada.
+

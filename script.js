@@ -22,11 +22,9 @@ async function mostrarResultados(){
     busqueda.innerHTML = "";
     document.getElementById("resultados").innerHTML = "";
     var filtrados = productos.filter(producto => {
-        var coincideNombre =
-            producto.title.toLowerCase().includes(busqueda.value.toLowerCase());
         var coincideCategoria =
             cat.value === "" || producto.category === cat.value;
-        return coincideNombre && coincideCategoria;
+        return producto.title.toLowerCase().includes(busqueda.value.toLowerCase()) && coincideCategoria;
     });
 
     filtrados.forEach(producto => {
