@@ -34,4 +34,11 @@ async function mostrarResultados(){
         li.appendChild(t);
         document.getElementById("resultados").appendChild(li);
     });
+    if(filtrados.length === 0){
+        var li = document.createElement("li");
+        var t = document.createElement("p");
+        t.textContent = "No se encontro ni un producto con los parametros de busqueda";
+        li.appendChild(t);
+        document.getElementById("resultados").appendChild(li);
+    }
 }
